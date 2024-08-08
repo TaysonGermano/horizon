@@ -22,13 +22,13 @@ const BlueHorizonLandingPage = () => {
               <nav className="flex items-center justify-between">
                 <a href="/" className="text-2xl font-bold">
                   <img
-                    src="/public/blue horizon white version.png"
+                    src="/blue horizon white version.png"
                     alt="Blue Horizon"
                     className="h-40"
                   />
                 </a>
                 <a
-                  href="/public/BH Catalog Small Scale.pdf"
+                  href="/BH Catalog Small Scale.pdf"
                   target="_blank"
                   download
                   className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded hidden md:inline-block uppercase"
@@ -85,7 +85,7 @@ const BlueHorizonLandingPage = () => {
             </p>
             <div>
               <img
-                src="/public/mining-work.jpg"
+                src="/mining-work.jpg"
                 alt="About Blue Horizon"
                 className="rounded-lg"
               />
@@ -110,7 +110,7 @@ const BlueHorizonLandingPage = () => {
             </p>
             <div>
               <img
-                src="/public/tractor.jpg"
+                src="/tractor.jpg"
                 alt="Mission and Vision"
                 className="rounded-lg"
               />
@@ -128,7 +128,7 @@ const BlueHorizonLandingPage = () => {
             <div className="md:grid md:grid-cols-2 gap-8">
               <div className="text-center mb-4 md:mb-0">
                 <img
-                  src="/public/kieran.jpg"
+                  src="/kieran.jpg"
                   alt="Kieran Haldenb"
                   className="rounded-md mb-4 mx-auto h-[300px] w-[300px]"
                 />
@@ -137,7 +137,7 @@ const BlueHorizonLandingPage = () => {
               </div>
               <div className="text-center">
                 <img
-                  src="/public/michael.jpeg"
+                  src="/michael.jpeg"
                   alt="Michael Mujey"
                   className="rounded-md mb-4 mx-auto h-[300px] w-[300px]"
                 />
