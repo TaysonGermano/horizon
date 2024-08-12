@@ -3,12 +3,14 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 
 const BlueHorizonLandingPage = () => {
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Add logic to handle form submission and email capture
-    console.log("Email submitted:", email);
+    console.log("Email submitted:", email, phone);
     setEmail("");
+    setPhone("");
   };
 
   return (
@@ -46,17 +48,27 @@ const BlueHorizonLandingPage = () => {
                 dedicated to helping our clients maximize their productivity and
                 efficiency.
               </p>
-              <form onSubmit={handleSubmit} className="mb-8">
+              <form
+                onSubmit={handleSubmit}
+                className="mb-8 flex flex-col gap-3 w-[300px] items-center mx-auto"
+              >
+                <input
+                  type="phone"
+                  placeholder="Enter your phone number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="bg-gray-800 text-white py-2 px-4 rounded-l focus:outline-none w-full"
+                />
                 <input
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="bg-gray-800 text-white py-2 px-4 rounded-l focus:outline-none w-[300px] mb-3 md:mb-0"
+                  className="bg-gray-800 text-white py-2 px-4 rounded-l focus:outline-none w-full"
                 />
                 <button
                   type="submit"
-                  className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-r uppercase"
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-r uppercase w-full"
                 >
                   Download Catalog
                 </button>
@@ -132,7 +144,7 @@ const BlueHorizonLandingPage = () => {
                   alt="Kieran Haldenb"
                   className="rounded-md mb-4 mx-auto h-[300px] w-[300px]"
                 />
-                <h3 className="text-xl font-bold">Kieran Haldenb</h3>
+                <h3 className="text-xl font-bold">Kieran Haldenby</h3>
                 <p className="text-gray-400">Managing Director</p>
               </div>
               <div className="text-center">
@@ -158,9 +170,9 @@ const BlueHorizonLandingPage = () => {
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-bold mb-2">Address</h3>
-                <p>123 Main Street, Anytown USA</p>
+                <p>112 tenth avenue Edenvale Gauteng South Africa</p>
               </div>
-              <div>
+              {/* <div>
                 <h3 className="text-xl font-bold mb-2">Social Media</h3>
                 <div className="flex space-x-4">
                   <a href="#" className="text-blue-500 hover:text-blue-600">
@@ -170,15 +182,15 @@ const BlueHorizonLandingPage = () => {
                     <FaTwitter size={24} />
                   </a>
                 </div>
-              </div>
+              </div> */}
               <div>
                 <h3 className="text-xl font-bold mb-2">Email</h3>
                 <p>
                   <a
-                    href="mailto:info@bluehorizon.com"
+                    href="mailto:sales.bluehorizonhb@gmail.com"
                     className="text-blue-500 hover:text-blue-600"
                   >
-                    info@bluehorizon.com
+                    sales.bluehorizonhb@gmail.com
                   </a>
                 </p>
               </div>
@@ -186,10 +198,17 @@ const BlueHorizonLandingPage = () => {
                 <h3 className="text-xl font-bold mb-2">Phone</h3>
                 <p>
                   <a
-                    href="tel:+18005551234"
+                    href="tel:+27812703803"
                     className="text-blue-500 hover:text-blue-600"
                   >
-                    1-800-555-1234
+                    +27812703803
+                  </a>
+                  <br />
+                  <a
+                    href="tel:+263716480512"
+                    className="text-blue-500 hover:text-blue-600"
+                  >
+                    +263716480512
                   </a>
                 </p>
               </div>
