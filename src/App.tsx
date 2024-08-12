@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
 
 const BlueHorizonLandingPage = () => {
   const [email, setEmail] = useState("");
